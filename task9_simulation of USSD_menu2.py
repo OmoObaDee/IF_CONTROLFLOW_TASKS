@@ -9,6 +9,7 @@ while option != "*123#":
     option = input("Kindly dial *123# code  for interaction and press enter key: ")
     confirm = input("DO YOU WISH TO CONTINUE PLEASE:?(yes/no): ").strip().lower()
 if confirm == "yes":
+      
     print("-" * 30)
     print("\nMenu:")
 print(" 1. Check Balance\n 2. Buy Airtime\n 3. Buy Data")
@@ -47,7 +48,7 @@ elif option == "3":
             print(f"\nYou have successfully purchased {data_dictionary['data'][index]} for ₦{data_dictionary['amount'][index]:,}.")
             balance -= data_dictionary["amount"][index]
             print("Your Account balance is ₦",balance)
-            print("Thanks for using Naija Mobile Service.")
+            print("Thanks for using Olu.Oludayo Mobile Service.")
     else:
         print("Invalid selection! Please try again.")
 else:
